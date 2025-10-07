@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/FbcC7t9P/premium-photo-1720032304972-1f1142e73253.jpg",
+    "title": "Chatify - Smart Messenger",
+    "companyName": "Bright Labs",
+    "id": 1,
+    "description": "A fast, secure, and smart messaging app with AI-powered chat suggestions and media sharing.",
+    "size": 45,
+    "reviews": 15423,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2200 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 9500 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/camera.png",
+    "title": "PhotoPlus - AI Editor",
+    "companyName": "Vision Tech",
+    "id": 2,
+    "description": "Enhance your photos with AI filters, background remover, and professional retouch tools.",
+    "size": 68,
+    "reviews": 9850,
+    "ratingAvg": 4.4,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 4150 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/task.png",
+    "title": "TaskHero - Daily Planner",
+    "companyName": "Bright Productivity",
+    "id": 3,
+    "description": "Organize tasks, set reminders, and boost productivity with smart scheduling features.",
+    "size": 32,
+    "reviews": 7450,
+    "ratingAvg": 4.7,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 3850 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qMh9nJmb/mobile-app-icon-1371731-512.png",
+    "title": "FitZone - Fitness & Diet",
+    "companyName": "Active Motion Co.",
+    "id": 4,
+    "description": "Track workouts, count calories, and achieve your fitness goals with personalized AI plans.",
+    "size": 80,
+    "reviews": 21340,
+    "ratingAvg": 4.5,
+    "downloads": 7500000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 5900 },
+      { "name": "5 star", "count": 10840 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/music.png",
+    "title": "MusicTime - Offline Player",
+    "companyName": "SoundSpark",
+    "id": 5,
+    "description": "Enjoy your favorite songs offline with powerful equalizer and playlist management.",
+    "size": 55,
+    "reviews": 18400,
+    "ratingAvg": 4.3,
+    "downloads": 4300000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2800 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 7100 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/school.png",
+    "title": "LearnX - Study Smart",
+    "companyName": "Bright Education",
+    "id": 6,
+    "description": "Interactive learning app featuring quizzes, flashcards, and video lessons from experts.",
+    "size": 64,
+    "reviews": 16450,
+    "ratingAvg": 4.8,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 10650 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/restaurant.png",
+    "title": "Foodiez - Order & Eat",
+    "companyName": "Tasty Hub Ltd.",
+    "id": 7,
+    "description": "Order from your favorite restaurants, get real-time delivery tracking and exclusive deals.",
+    "size": 72,
+    "reviews": 45230,
+    "ratingAvg": 4.2,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 2300 },
+      { "name": "2 star", "count": 3100 },
+      { "name": "3 star", "count": 5200 },
+      { "name": "4 star", "count": 12500 },
+      { "name": "5 star", "count": 22130 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Gv6Y70q3/istockphoto-1279130506-612x612.jpg",
+    "title": "TravelGo - Explore World",
+    "companyName": "FlyBright",
+    "id": 8,
+    "description": "Book flights, hotels, and tours with easy cancellation and price tracking.",
+    "size": 59,
+    "reviews": 18800,
+    "ratingAvg": 4.6,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 5600 },
+      { "name": "5 star", "count": 9700 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/partly-cloudy-day.png",
+    "title": "WeatherPro - Forecast Live",
+    "companyName": "SkySoft",
+    "id": 9,
+    "description": "Get accurate forecasts, storm alerts, and air quality updates in real time.",
+    "size": 49,
+    "reviews": 7800,
+    "ratingAvg": 4.1,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2400 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/controller.png",
+    "title": "GamersHub - Play & Stream",
+    "companyName": "Bright Games",
+    "id": 10,
+    "description": "Stream games, chat with other gamers, and discover trending live tournaments.",
+    "size": 120,
+    "reviews": 23500,
+    "ratingAvg": 4.7,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1400 },
+      { "name": "3 star", "count": 2700 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 11900 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/money.png",
+    "title": "FinanceFlow - Expense Tracker",
+    "companyName": "MoneyBright",
+    "id": 11,
+    "description": "Track your spending, create budgets, and manage your finances efficiently.",
+    "size": 38,
+    "reviews": 9400,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wrW6d15B/9491761.jpg",
+    "title": "MediCare - Health Tracker",
+    "companyName": "Wellness Pro",
+    "id": 12,
+    "description": "Track your vitals, appointments, and medication reminders in one place.",
+    "size": 56,
+    "reviews": 13500,
+    "ratingAvg": 4.6,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/news.png",
+    "title": "Newsly - Daily Briefs",
+    "companyName": "Bright Media",
+    "id": 13,
+    "description": "Get personalized news updates, trending stories, and breaking headlines instantly.",
+    "size": 34,
+    "reviews": 11200,
+    "ratingAvg": 4.2,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/shopping-cart.png",
+    "title": "ShopHub - Smart Shopping",
+    "companyName": "Bright Ecom",
+    "id": 14,
+    "description": "Shop from thousands of brands with discounts, cashback, and fast delivery.",
+    "size": 70,
+    "reviews": 21000,
+    "ratingAvg": 4.3,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 2900 },
+      { "name": "4 star", "count": 6200 },
+      { "name": "5 star", "count": 8800 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/lock.png",
+    "title": "SecurityX - Vault & Cleaner",
+    "companyName": "CyberBright",
+    "id": 15,
+    "description": "Keep your phone clean, secure, and optimized with advanced protection tools.",
+    "size": 46,
+    "reviews": 15600,
+    "ratingAvg": 4.4,
+    "downloads": 4900000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 7500 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/note.png",
+    "title": "SmartNotes - Quick Memo",
+    "companyName": "NoteBright",
+    "id": 16,
+    "description": "Take notes, draw ideas, and sync across all your devices seamlessly.",
+    "size": 28,
+    "reviews": 8900,
+    "ratingAvg": 4.6,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/translation.png",
+    "title": "LangPro - Learn Languages",
+    "companyName": "Bright Learn",
+    "id": 17,
+    "description": "Learn 20+ languages with interactive lessons, pronunciation practice, and games.",
+    "size": 85,
+    "reviews": 26300,
+    "ratingAvg": 4.9,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5700 },
+      { "name": "5 star", "count": 17600 }
+    ]
+  },
+  {
+    "image": "https://img.icons8.com/fluency/512/taxi.png",
+    "title": "DriverX - Ride Partner",
+    "companyName": "MoveBright",
+    "id": 18,
+    "description": "Book rides instantly, track drivers, and earn rewards on every trip.",
+    "size": 77,
+    "reviews": 29800,
+    "ratingAvg": 4.1,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 6900 },
+      { "name": "5 star", "count": 9300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/jPPmWwNc/2a581afd8006f41cf5825ec14f0e7178.jpg",
+    "title": "CameraOne - HD Capture",
+    "companyName": "PixelBright",
+    "id": 19,
+    "description": "Capture stunning photos and 4K videos with advanced manual controls.",
+    "size": 92,
+    "reviews": 17800,
+    "ratingAvg": 4.5,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 8900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y7FvsRC0/1200x600wa.png",
+    "title": "Relaxio - Sleep Sounds",
+    "companyName": "CalmBright",
+    "id": 20,
+    "description": "Listen to relaxing nature sounds, white noise, and guided meditation to sleep better.",
+    "size": 61,
+    "reviews": 15600,
+    "ratingAvg": 4.7,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 4400 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  }
+]
