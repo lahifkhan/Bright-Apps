@@ -5,23 +5,26 @@ import { formatDownloads } from "../Utility/FormatDownloads";
 import { FaStar } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import { IoMdArrowDropdown } from "react-icons/io";
+  
+
 
 const Installation = () => {
   const [installed, setInstalled] = useState(() => loadInstalled());
+  const [sortOrder, setSortOrder] = useState('none')
   const handleUninstall = (p) => {
     removeFromLocalDb(p);
     setInstalled((prev) => prev.filter((ap) => ap.id !== p.id));
     toast.success("Successfully Uninstall");
   };
-    const handleSort = (type) => {
-    if (type === 'Low-High') {
-      const sortedData = [...installed].sort((a, b) => a.downloads - b.downloads);
-      setInstalled(sortedData)
-    } else if (type === 'High-low') {
-      const sortedDataDesc = [...installed].sort((a, b) => b.downloads - a.downloads);
-      setInstalled(sortedDataDesc);
-    } 
-  }
+    const sortedItem = (() => {
+    if (sortOrder === 'downloads-asc') {
+      return [...installed].sort((a, b) => a.downloads - b.downloads)
+    } else if (sortOrder === 'price-desc') {
+      return [...installed].sort((a, b) => b.downloads - a.downloads)
+    } else {
+      return installed
+    }
+  })()
 
   return (
     <div className="w-11/12 mx-auto">
@@ -39,31 +42,20 @@ const Installation = () => {
         </h3>
 
        
-        <button
-          className="btn"
-          popoverTarget="popover-1"
-          style={{ anchorName: "--anchor-1" } }
-        >
-          Sort By downloads <IoMdArrowDropdown />
-
-        </button>
-
-        <ul
-          className="dropdown menu w-52 rounded-box bg-base-100 shadow-sm"
-          popover="auto"
-          id="popover-1"
-          style={{ positionAnchor: "--anchor-1" }}
-        >
-          <li onClick={()=> handleSort("Low-High")}>
-            <a>Low-High</a>
-          </li>
-          <li onClick={()=> handleSort("High-low")}>
-            <a>High-low</a>
-          </li>
-        </ul>
+       <label className='form-control max-w-xs w-full '>
+          <select
+            className='select select-bordered'
+            value={sortOrder}
+            onChange={e => setSortOrder(e.target.value)}
+          >
+            <option value='none'>Sort by downloads</option>
+            <option value='downloads-asc'>Low-High</option>
+            <option value='downloads-desc'>High-Low</option>
+          </select>
+        </label>
       </div>
       <div className="space-y-3">
-        {installed.map((p) => (
+        {sortedItem.map((p) => (
           <div key={p.id} className="card card-side bg-base-100 shadow-xl  p-4">
             <figure>
               <img
