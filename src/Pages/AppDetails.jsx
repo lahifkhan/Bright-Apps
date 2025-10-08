@@ -16,13 +16,21 @@ import {
   YAxis,
 } from "recharts";
 import AppNotFound from "../Components/AppNotFound";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const AppDetails = () => {
   const { id } = useParams();
+ 
   console.log(id);
-  const { apps } = useApps();
+  const { apps,loading } = useApps();
+  if(loading){
+    return <LoadingSpinner></LoadingSpinner>
+  }
   const singleApp = apps.find((app) => app.id === parseInt(id));
   console.log(singleApp);
+
+
+
   if(singleApp=== undefined){
     return <AppNotFound></AppNotFound>
   }

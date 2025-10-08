@@ -3,11 +3,15 @@ import Hero from "../Components/Hero";
 import useApps from "../Hooks/useApps";
 import AppCard from "../Components/AppCard";
 import { NavLink } from "react-router";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const Home = () => {
-  const { apps } = useApps();
+  const { apps,loading} = useApps();
   console.log(apps);
   const trendingApps = apps.slice(0, 8);
+  if(loading){
+    return <LoadingSpinner></LoadingSpinner>
+  }
   return (
     <div className="bg-[#d2d2d2] pb-8">
       <Hero></Hero>

@@ -5,7 +5,7 @@ const AppNotFound = () => {
     const navigate = useNavigate()
   return (
     <div className="flex flex-col items-center space-y-4 ">
-      <img src={AppNotfoundImg} alt="" />
+      <img src={AppNotfoundImg}  alt="" />
       <h1 className="font-bold text-[#001931] text-3xl">
         OPPS!! APP NOT FOUND
       </h1>
@@ -14,7 +14,7 @@ const AppNotFound = () => {
         another apps
       </p>
       <button
-        onClick={() => navigate(-1) }
+        onClick={() => navigate("/apps") }
         className="btn bg-gradient-to-br from-[#632ee3] to-[#9f62f2] text-white w-fit"
       >
         Go Back!
