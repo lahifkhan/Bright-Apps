@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import downloadIcon from "../assets/icon-downloads.png";
@@ -17,23 +16,35 @@ import {
 } from "recharts";
 import AppNotFound from "../Components/AppNotFound";
 import LoadingSpinner from "../Components/LoadingSpinner";
+import { isInstalled,  setInstalledApps } from "../Utility/localStorage";
+import Swal from "sweetalert2";
+import { useEffect, useState } from "react";
 
 const AppDetails = () => {
   const { id } = useParams();
- 
+
   console.log(id);
-  const { apps,loading } = useApps();
-  if(loading){
-    return <LoadingSpinner></LoadingSpinner>
-  }
+  const { apps, loading } = useApps();
+
   const singleApp = apps.find((app) => app.id === parseInt(id));
+  const [installed, setInstalled] = useState(false);
+ 
+
+  useEffect(() => {
+    if (singleApp) {
+      const isAppInstalled = isInstalled(singleApp);
+      setInstalled(isAppInstalled);
+    }
+  }, [singleApp]);
   console.log(singleApp);
 
-
-
-  if(singleApp=== undefined){
-    return <AppNotFound></AppNotFound>
+  if (loading) {
+    return <LoadingSpinner></LoadingSpinner>;
   }
+  if (singleApp === undefined) {
+    return <AppNotFound></AppNotFound>;
+  }
+
   const {
     title,
     downloads,
@@ -43,11 +54,25 @@ const AppDetails = () => {
     reviews,
     size,
     ratings,
-    description
+    description,
   } = singleApp || {};
   const dwonloadNumber = formatDownloads(downloads);
   const reviewNumber = formatDownloads(reviews);
- 
+
+  const handleInstallBtn = () => {
+    setInstalledApps(singleApp);
+    setInstalled(true);
+
+    Swal.fire({
+      title: "Successfully Installed",
+      icon: "success",
+      draggable: true,
+    });
+  };
+
+  const isInstalledApp = isInstalled(singleApp);
+  console.log(isInstalledApp);
+
   return (
     <div className="w-11/12 mx-auto my-20">
       <div className="card lg:card-side bg-base-100 shadow-sm p-4 ">
@@ -85,8 +110,12 @@ const AppDetails = () => {
             </div>
           </div>
           <div className="card-actions mt-4">
-            <button className="btn bg-[#00d390] text-white font-bold">
-              Install Now ({size}MB)
+            <button
+              onClick={handleInstallBtn}
+              className="btn !bg-[#00d390] !text-white font-bold "
+              disabled={installed}
+            >
+              {installed ? "Installed" : ` Install Now (${size}MB)`}
             </button>
           </div>
         </div>
@@ -99,13 +128,12 @@ const AppDetails = () => {
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={ratings} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis type="number" /> 
+            <XAxis type="number" />
             <YAxis dataKey="name" type="category" />
-           
+
             <Tooltip />
             <Legend />
             <Bar dataKey="count" fill="#ff8811" barSize={20} />
-           
           </BarChart>
         </ResponsiveContainer>
       </div>
