@@ -15,12 +15,17 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import AppNotFound from "../Components/AppNotFound";
 
 const AppDetails = () => {
   const { id } = useParams();
   console.log(id);
   const { apps } = useApps();
   const singleApp = apps.find((app) => app.id === parseInt(id));
+  console.log(singleApp);
+  if(singleApp=== undefined){
+    return <AppNotFound></AppNotFound>
+  }
   const {
     title,
     downloads,
