@@ -26,7 +26,7 @@ const Apps = () => {
   }
 
   return (
-    <div className="w-11/12 mx-auto mt-20">
+    <div className="w-11/12 mx-auto mt-20 bg-base-300">
       <div className="text-center space-y-4">
         <h1 className="text-4xl font-bold text-[#001931]">
           Our All Applications

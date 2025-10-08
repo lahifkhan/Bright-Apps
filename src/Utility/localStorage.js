@@ -23,4 +23,9 @@ export const setInstalledApps = (app) =>{
     localStorage.setItem("installed",JSON.stringify(updatedList));
 
 }
+export const removeFromLocalDb = (app)=>{
+    const data = loadInstalled();
+    const updatedData = data.filter(a => a.id !== app.id)
+    localStorage.setItem('installed', JSON.stringify(updatedData));
 
+}
