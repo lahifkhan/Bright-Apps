@@ -32,14 +32,14 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/"} className={({isActive})=> isActive ? "border-b-1  text-[#632ee3] rounded-none font-semibold" :"font-semibold"}>Home</NavLink>
               </li>
 
               <li>
-                <NavLink to={"/apps"}>Apps</NavLink>
+                <NavLink to={"/apps"} className={({isActive})=> isActive ? "border-b-1  text-[#632ee3] rounded-none font-semibold" :"font-semibold"}>Apps</NavLink>
               </li>
               <li>
-                <NavLink to={"/installation"}>Installation</NavLink>
+                <NavLink to={"/installation"} className={({isActive})=> isActive ? "border-b-1  text-[#632ee3] rounded-none font-semibold" :"font-semibold"}>Installation</NavLink>
               </li>
             </ul>
           </div>

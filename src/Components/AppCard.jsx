@@ -2,13 +2,15 @@ import React from "react";
 import { formatDownloads } from "../Utility/FormatDownloads";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { FaStar } from "react-icons/fa6";
+import { NavLink } from "react-router";
 const AppCard = ({ app }) => {
-  const { title, downloads, ratingAvg, image } = app;
+  const {id, title, downloads, ratingAvg, image } = app;
   const dwonloadNumber = formatDownloads(downloads);
   return (
-    <div className="card bg-base-100  shadow-sm p-4">
+   <NavLink to={`/apps/${id}`}>
+     <div className="card bg-base-100  shadow-sm p-4 hover:scale-105 transition ease-in-out">
       <figure className="h-48 overflow-hidden">
-        <img src={image} alt="" className="object-cover w-full" />
+        <img src={image} alt="" className="object-cover w-full h-full rounded-2xl" />
       </figure>
       <div className="card-body p-0 ">
         <h2 className=" text-base font-bold">{title}</h2>
@@ -30,6 +32,7 @@ const AppCard = ({ app }) => {
         </div>
       </div>
     </div>
+   </NavLink>
   );
 };
 
