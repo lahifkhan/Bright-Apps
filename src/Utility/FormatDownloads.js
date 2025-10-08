@@ -12,6 +12,6 @@ export const formatDownloads = (num) => {
     let d = Math.floor(r / 100);
     return `${th}.${d}K`;
   } else {
-    return num.toString();
+    return num;
   }
 };
