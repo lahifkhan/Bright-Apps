@@ -27,7 +27,7 @@ const Installation = () => {
   })()
 
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto my-8">
       <div className="text-center mt-20">
         <h2 className="text-5xl font-bold text-[#001931]">
           Your Installed Apps
@@ -56,12 +56,13 @@ const Installation = () => {
       </div>
       <div className="space-y-3">
         {sortedItem.map((p) => (
-          <div key={p.id} className="card card-side bg-base-100 shadow-xl  p-4">
+          <div key={p.id} className="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row p-4">
             <figure>
               <img
-                className="w-40 h-28 object-cover"
+                className="w-40 h-28 object-cover rounded-2xl"
                 src={p.image}
                 alt={p.name}
+                
               />
             </figure>
             <div className="card-body">
