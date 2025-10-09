@@ -76,7 +76,7 @@ const AppDetails = () => {
   return (
     <div className="w-11/12 mx-auto my-20">
       <div className="card lg:card-side bg-base-100 shadow-sm p-4 ">
-        <figure className="w-78 ">
+        <figure className="w-78 p-2 ">
           <img className="rounded-2xl" src={image} alt={title} />
         </figure>
         <div className="card-body">
@@ -90,7 +90,7 @@ const AppDetails = () => {
 
           <hr className="my-5 opacity-15" />
 
-          <div className="flex gap-15">
+          <div className="flex gap-3 md:gap-15">
             <div className="flex flex-col items-start space-y-1">
               <img src={downloadIcon} alt="" />
               <p className="text-[#001931]">Downloads</p>
@@ -123,8 +123,8 @@ const AppDetails = () => {
 
       <hr className="my-10 opacity-15" />
 
-      <div className="bg-base-100  rounded-xl  h-80 ">
-        <h1 className="font-bold">Ratings</h1>
+      <div className="  rounded-xl  h-80 p-3 ">
+        <h1 className="font-bold text-2xl text-[#001931] mb-3">Ratings</h1>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={ratings} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
@@ -139,7 +139,7 @@ const AppDetails = () => {
       </div>
 
       <div className="my-15">
-        <h1 className="font-bold text-2xl">Description</h1>
+        <h1 className="font-bold text-2xl text-[#001931]">Description</h1>
         <p>{description}</p>
       </div>
     </div>
