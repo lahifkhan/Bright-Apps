@@ -19,7 +19,7 @@ const Installation = () => {
     const sortedItem = (() => {
     if (sortOrder === 'downloads-asc') {
       return [...installed].sort((a, b) => a.downloads - b.downloads)
-    } else if (sortOrder === 'price-desc') {
+    } else if (sortOrder === 'downloads-desc') {
       return [...installed].sort((a, b) => b.downloads - a.downloads)
     } else {
       return installed
