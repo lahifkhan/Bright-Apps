@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#272727]">
+    <div className="bg-[#272727] ">
       <footer className="footer sm:footer-horizontal   p-10  grid grid-cols-2 md:grid-cols-5 w-11/12 mx-auto">
         <div className="flex-1">
           <h1 className="text-white text-xl font-bold">Bright-Apss</h1>
@@ -60,7 +60,7 @@ const Footer = () => {
         </nav>
         <form className="flex-1 ">
           <h6 className="footer-title text-white">Get in Touch</h6>
-          <fieldset className="w-80">
+          <fieldset className="w-55">
             <label className="text-white">Enter your email address</label>
             <div className="join">
               <input
@@ -91,6 +91,7 @@ const Footer = () => {
         Copyright © {new Date().getFullYear()} - All right reserved
       </p>
     </div>
+    
   );
 };
 
