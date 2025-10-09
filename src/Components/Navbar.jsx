@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router";
 import { FaGithub } from "react-icons/fa";
+import logoImg from "../assets/logo.png"
 
 
 
@@ -43,7 +44,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <NavLink to={"/"} className="font-bold text-xl p-0">Bright-Apps</NavLink>
+          <NavLink to={"/"} className="font-bold text-xl p-0 flex items-center gap-1 bg-gradient-to-br from-[#632ee3] to-[#9f62f2] bg-clip-text text-transparent"> 
+          <img src={logoImg} alt="" className="w-10 h-10" />
+          Bright-Apps</NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
