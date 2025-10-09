@@ -13,7 +13,7 @@ const Home = () => {
     return <LoadingSpinner></LoadingSpinner>
   }
   return (
-    <div className="bg-base-300 pb-8">
+    <div className="bg-base-300 ">
       <Hero></Hero>
 
       <div className="w-11/12 mx-auto mt-20 ">

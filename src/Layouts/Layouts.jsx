@@ -11,7 +11,7 @@ const Layouts = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar></Navbar>
      
-        <main className="flex-1 bg-base-300">
+        <main className="flex-1 bg-base-300 py-6">
           <Outlet></Outlet>
         </main>
       
