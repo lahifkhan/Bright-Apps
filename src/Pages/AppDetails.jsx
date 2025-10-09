@@ -126,7 +126,7 @@ const AppDetails = () => {
       <div className="  rounded-xl  h-80 p-3 ">
         <h1 className="font-bold text-2xl text-[#001931] mb-3">Ratings</h1>
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={ratings} layout="vertical">
+          <BarChart data={[...ratings].reverse()} layout="vertical">
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" />
             <YAxis dataKey="name" type="category" />

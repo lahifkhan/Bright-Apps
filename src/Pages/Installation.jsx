@@ -54,7 +54,7 @@ const Installation = () => {
           </select>
         </label>
       </div>
-      <div className="space-y-3">
+      <div className="space-y-3 min-h-screen">
         {sortedItem.map((p) => (
           <div key={p.id} className="card card-side bg-base-100 shadow-xl flex flex-col md:flex-row p-4">
             <figure>
