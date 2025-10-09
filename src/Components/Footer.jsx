@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#272727]">
-      <footer className="footer sm:footer-horizontal   p-10  flex justify-between w-11/12 mx-auto">
+      <footer className="footer sm:footer-horizontal   p-10  grid grid-cols-2 md:grid-cols-5 w-11/12 mx-auto">
         <div className="flex-1">
           <h1 className="text-white text-xl font-bold">Bright-Apss</h1>
           <p className="text-base-100 opacity-80">
