@@ -19,6 +19,7 @@ import LoadingSpinner from "../Components/LoadingSpinner";
 import { isInstalled,  setInstalledApps } from "../Utility/localStorage";
 import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
+ import { ToastContainer, toast } from 'react-toastify';
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -63,11 +64,13 @@ const AppDetails = () => {
     setInstalledApps(singleApp);
     setInstalled(true);
 
-    Swal.fire({
-      title: "Successfully Installed",
-      icon: "success",
-      draggable: true,
-    });
+    // Swal.fire({
+    //   title: "Successfully Installed",
+    //   icon: "success",
+    //   draggable: true,
+    // });
+
+    toast.success("Successfully Installed");
   };
 
   const isInstalledApp = isInstalled(singleApp);
@@ -142,6 +145,7 @@ const AppDetails = () => {
         <h1 className="font-bold text-2xl text-[#001931]">Description</h1>
         <p>{description}</p>
       </div>
+       <ToastContainer />
     </div>
   );
 };
