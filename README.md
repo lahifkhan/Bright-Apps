@@ -62,7 +62,7 @@ This improves decision-making and enhances app discovery experience.
 - React (Vite)
 - Tailwind CSS
 - DaisyUI
-- React Router DOM
+- React Router
 - Recharts
 - Lucide React / React Icons
 
@@ -74,7 +74,7 @@ This improves decision-making and enhances app discovery experience.
 
 - react
 - react-dom
-- react-router-dom
+- react-router
 - tailwindcss
 - daisyui
 - recharts
@@ -83,8 +83,6 @@ This improves decision-making and enhances app discovery experience.
 ### Dev Dependencies
 
 - vite
-- postcss
-- autoprefixer
 
 ---
 
