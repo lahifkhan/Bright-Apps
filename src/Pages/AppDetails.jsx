@@ -16,10 +16,10 @@ import {
 } from "recharts";
 import AppNotFound from "../Components/AppNotFound";
 import LoadingSpinner from "../Components/LoadingSpinner";
-import { isInstalled,  setInstalledApps } from "../Utility/localStorage";
+import { isInstalled, setInstalledApps } from "../Utility/localStorage";
 import Swal from "sweetalert2";
 import { useEffect, useState } from "react";
- import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -29,7 +29,6 @@ const AppDetails = () => {
 
   const singleApp = apps.find((app) => app.id === parseInt(id));
   const [installed, setInstalled] = useState(false);
- 
 
   useEffect(() => {
     if (singleApp) {
@@ -145,7 +144,7 @@ const AppDetails = () => {
         <h1 className="font-bold text-2xl text-[#001931]">Description</h1>
         <p>{description}</p>
       </div>
-       <ToastContainer />
+      <ToastContainer />
     </div>
   );
 };
